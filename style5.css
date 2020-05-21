@@ -1,0 +1,114 @@
+body,
+html {
+  width: 100%;
+  height: 100%; 
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif
+  
+}
+p{
+  font-style: italic;
+  font-size: 100px;
+  color: white;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+section
+{
+width:100%;
+height: 100vh;
+background: linear-gradient(-45deg, #EE7752, #E73C7E, rgb(5, 115, 166), #23D5AB);
+background-size:400% 400%;
+position: relative;
+animation: change 10s ease-in-out infinite;
+
+}
+
+hr {
+  max-width: 65px;
+  border-width: 3px;
+  border-color: rgba(240, 68, 168, 0.603); 
+}
+.faded {
+  font-size: 200px;
+  margin-top: 10px;
+  margin-bottom: 50PX;
+  color: rgb(0, 0, 0); 
+  text-align: center;
+  font-weight: 5000;
+  animation-name: moveToLeft;
+  animation-duration: 2s;
+}
+
+header.startup {
+  background-position: center;
+  height: 100%;
+}
+
+header.startup hr {
+  margin-top: 60px;
+  margin-bottom: 20px; 
+}
+
+header.startup h1 {
+  font-size: 50px; 
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.btn-xl {
+  padding: 1rem 2rem; 
+  animation-name: animateBtn;
+  animation-duration: 1s;
+  animation-name: animateBtn;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.btn-primary {
+  background-color: rgb(211, 68, 240);
+  border-color: rgb(240, 68, 203); }
+
+.btn-primary:hover {
+  background-color: #ee08e2;
+  border-color: rgb(238, 8, 219);
+  border-width: 5px;
+  cursor: pointer;
+}
+  @keyframes change{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+  @keyframes moveToLeft{
+    0%{
+       transform: translateX(120px);
+       opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes animateBtn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
